@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title id="hostname"></title>
+		<style>
+			body { font-family: Segoe UI, sans-serif; }
+			a { text-decoration: none; color: inherit; }
+		</style>
+	</head>
+	<body>
+		<h1>404: Resource Not Found</h1>
+		<p id="loc"></p>
+		<script>
+  			const locationVar = document.getElementById("loc");
+  			locationVar.innerText = `The requested resource ${window.location.pathname} could not be found.`;
+  			const hostnameVar = document.getElementById("hostname");
+  			hostnameVar.innerText = `404: Not Found | ${window.location.hostname}`;
+		</script>
+		<p>This could be because:</p>
+		<ul>
+			<li>The item has moved or been renamed.</li>
+			<li>The item has been deleted.</li>
+			<li>The item never existed here.</li>
+		</ul>
+		<a href="/">Click here to return to main website.</a>
+	</body>
+</html>
